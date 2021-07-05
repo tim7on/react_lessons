@@ -1,0 +1,43 @@
+@import '../variable';  
+@import '../input/Input.module.scss';
+
+.btn_act {
+    display: flex;
+    justify-content: center;
+    background: $accent-color;
+    color: $back-color;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    padding: 5px;
+    transition: color ease-in-out 250ms, background ease-out 250ms;
+
+    &:focus {
+        outline: 3px dotted $accent-color;
+        animation: App-logo-float 1s ease-in-out;
+    }
+
+    &:hover {
+        color: $accent-color;
+        background: $active-color;
+        transition: color ease-in-out 250ms, background ease-out 300ms;
+    }
+}
+
+@keyframes App-logo-float {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }

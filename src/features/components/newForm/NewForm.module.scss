@@ -1,24 +1,42 @@
 @import '../variable';
+
 .box {
     background: $back-color;
-    padding: 34px;
+    padding: 28px;
     border-radius: 10px;
-    margin: 36px;
+    margin: 16px;
 }
 
 .fieldform {
-    border: 7px solid;
+    border: 5px solid;
     border-radius: inherit;
     padding: 32px;
     color: $text-color;
     display: flex;
+    // max-height: 0;
+    overflow: hidden;
     flex-direction: column;
+    transition: max-height 750ms ease-in 250ms, border-color ease-in-out 150ms;
 
+    &:hover {
+        border-color: $active-color;
+        // max-height: 999px;
+        transition: max-height 750ms ease-in 250ms, border-color ease-in-out 150ms;
+
+        // label {
+        //     display: block;
+        // }
+
+        // input[type='text'] {
+        //     display: block;
+        // }
+    }
 
     label {
         flex-direction: column;
         display: block;
-        font-size: 18px;
+        font-size: 16px;
+        font-weight: 600;
         line-height: 24px;
         margin: 5px 0;
         letter-spacing: 2px;
@@ -26,11 +44,11 @@
 
     legend {
         line-height: 0;
-        padding: 0 1em;
+        padding: 0 16px;
         text-align: center;
         text-transform: uppercase;
         font-weight: 900;
-        font-size: 1.4em;
+        font-size: 26px;
         color: $accent-color;
     }
 

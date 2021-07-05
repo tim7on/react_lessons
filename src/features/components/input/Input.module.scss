@@ -3,14 +3,16 @@
 .btn {
     background: none;
     color: $accent-color;
+    font-weight: 600;
     font-size: 16px;
     margin: 32px 0 0 0;
     border: solid 4px $accent-color;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     line-height: 1.5;
     letter-spacing: 2px;
     padding: 10px 0;
+    transition: border-color ease-in-out 250ms, color ease-out 250ms;
 
     &:focus {
         outline: 2px dotted $accent-color;
@@ -19,6 +21,7 @@
     &:hover {
         color: $active-color;
         border-color: $active-color;
+        transition: border-color ease-in-out 250ms, color ease-out 300ms;
     }
 }
 
@@ -29,7 +32,7 @@
     padding: 10px 0;
     width: 100%;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 10px 0;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 

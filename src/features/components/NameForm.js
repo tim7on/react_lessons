@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Input from './input/Input';
 import NewForm from './newForm/NewForm'
 
