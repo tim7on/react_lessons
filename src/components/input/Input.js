@@ -28,7 +28,7 @@ export const Input = (props) => {
         )
     } else if (inputType === 'texttodo') {
         input = (
-            <input type={inputType} className={styles.input} name={name} onChange={onChange} value={value} {...rest} />
+            <input type={inputType} className={styles.input} name={name} onChange={onChange} ref={inRef} value={value} {...rest} />
         )
     }
     return (

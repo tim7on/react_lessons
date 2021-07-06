@@ -1,16 +1,16 @@
 import React from 'react';
 import './App.scss';
-import NameForm from './features/components/NameForm';
-import FileInput from './features/components/FileInput';
-import ToDoList from './features/components/todoList/ToDoList';
+import NameForm from './components/NameForm';
+import FileInput from './components/FileInput';
+import ToDoList from './components/todoList/ToDoList';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <ToDoList />
         <NameForm />
         <FileInput />
-        <ToDoList />
       </header>
     </div>
   );

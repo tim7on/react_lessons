@@ -1,7 +1,11 @@
-@import "features/components/_variable";
+@import "./components/_variable";
 
 * {
   margin: 0;
+}
+::selection {
+  color: $back-color-dark;
+  background: $active-color;
 }
 #root{
   background-color: $back-color-dark;

@@ -30,11 +30,13 @@
     font-size: 16px;
     text-indent: 10px;
     padding: 10px 0;
+    background: $back-color-dark;
+    color: $accent-color;
     width: 100%;
     border: none;
     border-radius: 10px;
     margin: 10px 0;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    letter-spacing: 2px;
 
     &:focus {
         outline: none !important;
